@@ -1,6 +1,6 @@
 /**
  *INTER. BIT
- *QUE=> Given a collection of intervals, merge all 	 *	 *	overlapping intervals.
+ *QUE=> Given a collection of intervals, merge all overlapping intervals.
  *
  *	For example:
  *	Given [1,3],[2,6],[8,10],[15,18],
@@ -16,6 +16,7 @@
  *     Interval() { start = 0; end = 0; }
  *     Interval(int s, int e) { start = s; end = e; }
  * }
+ * The solution below is the fastest solution
  */
 public class Solution {
     public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
