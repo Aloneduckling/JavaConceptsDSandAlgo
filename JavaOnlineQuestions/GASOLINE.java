@@ -1,3 +1,8 @@
+/*
+    Problem link ==> https://www.codechef.com/problems/GASOLINE 
+    implementation of 2d ArrayList and sorting it with lambda
+    the speed can be increased by using fast IO in java
+*/
 import java.util.*;
 
 public class Main {
@@ -13,6 +18,7 @@ public class Main {
           for(int i=0;i<n;i++){
               fi.add(sc.nextLong());
           }
+          //creating a temp array list which froms the nested array or a pair<Key,Value> and then adds it to the main array
           for(int i=0;i<n;i++){
               ci.add(sc.nextLong());
               List<Long> temp = new ArrayList<>();
@@ -21,7 +27,7 @@ public class Main {
               li.add(temp);
           }
           Collections.sort(li,(o1, o2) -> (int) (o1.get(0)-o2.get(0)));
-
+           //solving the question
           int left =n;
           long cost=0;
          for(int i=0;i<li.size();i++){
